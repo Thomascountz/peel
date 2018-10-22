@@ -1,8 +1,8 @@
 # Peel
 
-Non-production Ruby implementation of the Active Record Pattern, inspired by Gregory Brown's Broken Record projec.
+Non-production Ruby implementation of the Active Record Pattern, inspired by Gregory Brown's Broken Record project.
 
-## Production Journal
+## Development Journal
 
 A contemporaneous journal of the development of Peel can be found under [/dev_journal](dev_journal)
 
