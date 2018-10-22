@@ -1,8 +1,10 @@
 # Peel
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/peel`. To experiment with that code, run `bin/console` for an interactive prompt.
+Non-production Ruby implementation of the Active Record Pattern, inspired by Gregory Brown's Broken Record projec.
 
-TODO: Delete this and the text above, and describe your gem
+## Production Journal
+
+A contemporaneous journal of the development of Peel can be found under [/dev_journal](dev_journal)
 
 ## Installation
 
@@ -22,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The gem is currently unusable at this phase.
 
 ## Development
 
