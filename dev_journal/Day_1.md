@@ -79,10 +79,10 @@ class Book
         "SELECT * FROM books WHERE id = ? LIMIT 1", id
       )
       result.empty? ? result : Book.new(id: result[0][0], 
-          								title: result[0][1], 
-          								author: result[0][2], 
-          								isbn: result[0][3]
-          								)
+                                        title: result[0][1], 
+                                        author: result[0][2], 
+                                        isbn: result[0][3]
+                                        )
     end
   end
 
