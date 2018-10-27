@@ -66,9 +66,9 @@ module Foo
   end
     
   module ClassMethods
-      def bar
-          "It works!"
-      end
+    def bar
+      "It works!"
+    end
   end
 end
 
@@ -133,8 +133,8 @@ class Book
   class << self
     def columns
       SQLite3::Database.new("books_app")
-		.execute("PRAGMA table_info(#{@table_name})")
-		.map { |column| column[1].to_sym }
+        .execute("PRAGMA table_info(#{@table_name})")
+        .map { |column| column[1].to_sym }
     end
   end
 end
@@ -184,8 +184,8 @@ module Modelable
       
     def columns
       SQLite3::Database.new("books_app")
-		.execute("PRAGMA table_info(#{@table_name})")
-		.map { |column| column[1].to_sym }
+        .execute("PRAGMA table_info(#{@table_name})")
+        .map { |column| column[1].to_sym }
     end
   end
 end
