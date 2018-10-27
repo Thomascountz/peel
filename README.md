@@ -47,7 +47,7 @@ end
 
 Call `.find()` on your model. A new instance will be returned with getters/setters based on the row set:
 
-```
+```ruby
 book = Book.find(1)
 #=> #<Book:0x007f803ea9e938 @author="Metz, Sandi", @id=1, @isbn="0311237841549", @title="Practical Object-Oriented Design in Ruby">
 
