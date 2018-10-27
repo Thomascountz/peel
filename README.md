@@ -24,7 +24,36 @@ Or install it yourself as:
 
 ## Usage
 
-The gem is currently unusable at this phase.
+Configure Peel to use an _existing_ SQLite databse file, by calling `Peel.configure()` and passing in a block:
+
+```ruby
+# config.rb
+require 'peel'
+Peel.configure do |config|
+  config.database_file = "books_app"
+end
+```
+
+Include `Peel::Modelable` in your class and call `peel_off`, passing in the table name as a symbol or string:
+
+```ruby
+# book.rb
+require 'config'
+class Book
+  include Peel::Modelable
+  peel_off(:books)
+end
+```
+
+Call `.find()` on your model. A new instance will be returned with getters/setters based on the row set:
+
+```
+book = Book.find(1)
+#=> #<Book:0x007f803ea9e938 @author="Metz, Sandi", @id=1, @isbn="0311237841549", @title="Practical Object-Oriented Design in Ruby">
+
+book.title
+#=> "Practical Object-Oriented Design in Ruby"
+```
 
 ## Development
 
