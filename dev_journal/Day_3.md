@@ -113,7 +113,7 @@ def update(title: nil, author: nil, isbn: nil)
   ...
   SQLite3::Database.new("books.db").execute(
     "UPDATE books SET title = ?, author = ?, isbn = ? WHERE id = ?",
-      title, author, isbn, @id]
+      [title, author, isbn, @id]
   )
   ...
 end
